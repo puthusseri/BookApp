@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BookList</title>
+  <link rel="shortcut icon" href="res/favicon.ico">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma:400,600">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header-section fixed-width">
+    <h1>BookList</h1>
+    <p>
+      Welcome to the library Application
+    </p>
+  </header>
+  <section class="form-section fixed-width">
+    <button id="new-book-btn" class="generic-button">New book</button>
+    <form id="new-book-form">
+      <p>
+        <input id="new-book-title" class="user-input" type="text" placeholder="Title">
+      </p>
+      <p>
+        <input id="new-book-author" class="user-input" type="text" placeholder="Author">
+      </p>
+      <p>
+        <input id="new-book-year" class="user-input" type="text" placeholder="Year">
+      </p>
+      <p>
+        <input id="new-book-isbn" class="user-input" type="text" placeholder="ISBN-10 or ISBN-13">
+      </p>
+      <p>
+        <select id="new-book-category" class="user-input">
+          <option value="" disabled selected>Select a category</option>
+          <option value="arts-and-music">Arts &amp; Music</option>
+          <option value="biography">Biography</option>
+          <option value="business">Business</option>
+          <option value="cooking">Cooking</option>
+          <option value="educational">Educational</option>
+          <option value="entertainment">Entertainment</option>
+          <option value="health-and-fitness">Health &amp; Fitness</option>
+          <option value="history">History</option>
+          <option value="horror">Horror</option>
+          <option value="kids">Kids</option>
+          <option value="literature">Literature</option>
+          <option value="medical">Medical</option>
+          <option value="mysteries">Mysteries</option>
+          <option value="political-affairs">Political affairs</option>
+          <option value="religion">Religion</option>
+          <option value="romance">Romance</option>
+          <option value="science-and-math">Science &amp; Math</option>
+          <option value="social-sciences">Social Sciences</option>
+          <option value="sports">Sports</option>
+          <option value="technolgy">Technology</option>
+        </select>
+      </p>
+      <button id="add-book-btn" type="submit" class="generic-button">Add book</button>
+      <div id="error-message" class="error-message"></div>
+    </form>
+  </section>
+  <section class="book-list-section fixed-width">
+    <ul id="book-list"></ul>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
